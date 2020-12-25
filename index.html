@@ -11,13 +11,16 @@
 
 <div id="app">
   <p>{{message}}</p>
-  <button v-on:click="reverseMessage">メッセージ反転</button>
+  <button v-on:click="reverseMessage">繝｡繝�繧ｻ繝ｼ繧ｸ蜿崎ｻ｢</button>
+  <p>{{ number + 5 }}</p>
 </div>
 <script>
     new Vue({
       el: "#app",
       data: {
-        message: "HelloWorld!"
+        message: "HelloWorld!",
+        number: 3,
+        ok: true
       },
       methods: {
         reverseMessage: function() {
